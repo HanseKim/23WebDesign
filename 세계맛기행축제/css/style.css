@@ -1,0 +1,287 @@
+@charset "utf-8";
+*{
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    color: #333333;
+    font-size: 20px;
+}
+html,body{
+    width: 1000px;
+    height: 650px;
+    background-color: #ffffff;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+header{
+    float: left;
+    position: absolute;
+}
+.top{
+    float: left;
+    width: 200px;
+    height: 650px;
+    background-color: #dddddd;
+}
+.logo{
+    float: left;
+    width: 200px;
+    height: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.logo img{
+    float: left;
+    width: 200px;
+    height: 40px;
+    margin-top: 5px;
+}
+.menu{
+    float: left;
+    top: 100px;
+    left: 10px;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+}
+.navi>li{
+    float: left;
+    width: 180px;
+}
+.navi>li>a{
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #333333;
+    color: #ffffff;
+}
+.navi>li>a:hover{
+    background-color: royalblue;
+}
+.submenu{
+    float: left;
+    width: 180px;
+    height: 100%;
+    left: 180px;
+    top: 0px;
+    position: absolute;
+    background-color: #cccccc;
+    display: none;
+    z-index: 1;
+}
+.submenu>li>a{
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #cccccc;
+    color: #ffffff;
+}
+.submenu>li>a:hover{
+    background-color: royalblue;
+}
+.bodywrap{
+    float: right;
+    width: 800px;
+    height: 550px;
+}
+.imgslide{
+    width: 800px;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+.slidelist{
+    width: 2400px;
+}
+.slidelist>a{
+    float: left;
+    width: 800px;
+    height: 350px;
+}
+.slidelist>a>span{
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: gray;
+    opacity: 0.8;
+}
+.contents{
+    width: 800px;
+    height: 200px;
+}
+.notice{
+    float: left;
+    width: 300px;
+    height: 200px;
+}
+.tab{
+    width: 80px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 5px;
+    border: 1px solid gray;
+    text-align: center;
+    border-bottom: none;
+}
+.notice ul{
+    width: 280px;
+    height: 150px;
+    margin-left: 5px;
+    border: 1px solid gray;
+}
+.notice ul li a{
+    font-size: 16px;
+    margin-top: 10px;
+}
+.notice ul li a:hover{
+    font-weight: bold;
+}
+.notice span{
+    float: right;
+    font-size: 16px;
+}
+.gallery{
+    float: left;
+    width: 300px;
+    height: 200px;
+}
+.gallery ul{
+    width: 280px;
+    height: 150px;
+    margin-left: 5px;
+    border: 2px solid gray;
+}
+.gallery ul li{
+    float: left;
+}
+.gallery ul li a{
+    margin-top: 30px;
+    margin-left: 15px;
+}
+.gallery ul li a:hover{
+    opacity: 0.5;
+}
+.shortcut{
+    float: right;
+    width: 200px;
+    height: 190px;
+}
+.shortcut a{
+    width: 180px;
+    height: 180px;
+    margin-top: 5px;
+}
+.shortcut span{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: gray;
+    opacity: 0.8;
+}
+.shortcut img{
+    width: 180px;
+    height: 190px;
+}
+.shortcut a:hover{
+    opacity: 0.5;
+}
+#modal{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(200,200,200,0.6);
+    z-index: 2;
+    display: none;
+}
+#modal.active{
+    display: block;
+}
+.modal_up{
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    background-color: white;
+}
+.uptitle{
+    float: left;
+    width: 500px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+}
+.upbody{
+    float: left;
+    text-align: center;
+    padding: 30px;
+}
+.btn{
+    display: block;
+    position: absolute;
+    width: 70px;
+    height: 40px;
+    background-color: gray;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    right: 10px;
+    bottom: 10px;
+    font-weight: bold;
+}
+footer{
+    float: right;
+    width: 800px;
+    height: 100px;
+    background-color: cornflowerblue;
+}
+.btlogo{
+    float: left;
+    width: 200px;
+    height: 100px;
+}
+.btlogo img{
+    margin-top: 30px;
+}
+.site{
+    float: right;
+    width: 600px;
+    height: 100px;
+}
+.btmenu{
+    float: left;
+    width: 600px;
+    height: 50px;
+}
+.btmenu ul{
+    text-align: center;
+}
+.btmenu li {
+    float: left;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+}
+.btmenu li a:hover{
+    font-weight: bold;
+}
+.copy{
+    float: left;
+    width: 600px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
